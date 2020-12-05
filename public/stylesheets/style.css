@@ -1,0 +1,116 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #F6F9FC;
+  font-family: 'Courier Prime', monospace;
+  margin: 0;
+}
+#container {
+display: flex;
+flex-direction: row;
+margin: 0;
+}
+#sidebar {
+  background-color: rgb(35, 41, 47);
+  background-color: whitesmoke;
+  background-image: linear-gradient(to right bottom, rgba(119,119,119,0.6), rgba(119,119,119,0.6)), url('https://i.imgur.com/XjlG7bX.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 40vw;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+}
+main {
+  margin-left: 4rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #000;
+}
+#logo {
+  font-size: 5rem;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+a {
+  color: #00B7FF;
+}
+#info-card, #projects {
+  margin: 5rem auto;
+  width: 60%;
+  padding: 15px;
+  background-color: white;
+}
+#info-card img {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 40vh;
+  object-fit: cover;
+}
+#profile {
+  display: block;
+  margin-left: 3rem;
+  line-height: 1rem;
+}
+#projects {
+height: 80vh;
+}
+#projects-header {
+  text-align: center;
+}
+#social {
+  display: flex;
+  font-size: 4rem;
+}
+#social i {
+  padding: 1rem;
+}
+video {
+  width: 100%;
+  height: 70%;
+  object-fit: fill;
+}
+.footer {
+  max-width: 100%;
+  height: 100%;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #1A1E23;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0px;
+  color: #000;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#contact {
+  font-size: 3rem;
+}
