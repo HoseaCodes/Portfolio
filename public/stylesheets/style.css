@@ -104,7 +104,7 @@ a {
 }
 #info-card {
   height: 100%;
-  margin: 3rem auto;
+  margin: 2rem auto;
 }
 #info-card img {
   display: block;
@@ -165,9 +165,16 @@ video, #currently-work {
 }
 .side-project-info {
   width: 50%;
+  margin-top: 1rem;
 }
-.project-info {
+.project-info,.project-links {
   overflow: scroll;
+  font-size: 1.3rem;
+}
+.project-header, .side-project-header {
+  text-decoration: none;
+  color: #1A1E23;
+  font-size: 2rem;
 }
 .footer {
   max-width: 100%;
@@ -244,7 +251,7 @@ input::placeholder, textarea::placeholder {
   height: 8rem;
   margin: 2px;
 }
-.btn {
+.btn, .project-links {
   border: 2px solid #fff;
   color: white;
   cursor: pointer;
@@ -260,9 +267,6 @@ input::placeholder, textarea::placeholder {
 }
 .btn:hover {
   border: 2px solid #000;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 13pt;
   margin-bottom: 10px;
   padding: 10px 20px;
   transition: all 0.5s;
@@ -272,7 +276,25 @@ input::placeholder, textarea::placeholder {
   background-color: transparent;
   color: #000;
   font-size: larger;
-
+}
+.project-links:hover {
+  border: 2px solid #000;
+  margin-bottom: 6px;
+  padding: 6px 8px;
+  transition: all 0.5s;
+  text-decoration: none;
+  animation: header-btn 10s steps(1) -1s normal;
+  background-color: transparent;
+  color: #000;
+  font-size: larger;
+}
+.project-header:hover, .side-project-header:hover {
+  transition: all 0.5s;
+  text-decoration: none;
+  animation: header-btn 10s steps(1) -1s normal;
+  background-color: transparent;
+  color: #00B7FF;
+  font-size: 2.2rem;
 }
 
 @media only screen and (min-width: 768px) {
