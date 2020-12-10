@@ -71,8 +71,8 @@ a {
 }
 .old-paper{
   position:relative;
-  max-width:850px;
-} */
+  max-width:950px;
+} 
 
  .original-image{
   width:100%;
@@ -86,7 +86,7 @@ a {
   left:0;
   top:0;
   right:0;
-  bottom:0;
+  bottom:-31.5%;
 }
 
 .overlay img{
