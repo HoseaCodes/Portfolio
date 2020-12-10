@@ -160,6 +160,10 @@ video, #currently-work {
 .side-projects {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+.side-project-info {
+  width: 50%;
 }
 .project-info {
   overflow: scroll;
