@@ -87,7 +87,7 @@ a {
   line-height: 1rem;
 }
 #projects {
-height: 80vh;
+height: 100%;
 }
 #projects-header {
   text-align: center;
@@ -101,6 +101,23 @@ height: 80vh;
 #social i {
   padding: 1rem;
 }
+#interest {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+}
+.interest-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first, .second, .third {
+  border-bottom: 10px solid #000;
+}
+.first, .second, .fourth, .fifth {
+  border-right: 10px solid #000;
+}
 video {
   width: 100%;
   height: 70%;
@@ -109,6 +126,9 @@ video {
 .side-projects {
   display: flex;
   flex-wrap: wrap;
+}
+.project-info {
+  overflow: scroll;
 }
 .footer {
   max-width: 100%;
@@ -129,6 +149,8 @@ video {
   align-items: center;
   text-decoration: none;
 }
-#contact {
+
+.sub-title {
   font-size: 3rem;
+  padding-top: 5rem;
 }

@@ -20,7 +20,7 @@
       <div id="sidebar-content">
         <p id="logo">D.Hosea</p>
         <article id="info-card">
-          <img src="/images/1.png" alt="D.Hosea" width="400px" height="500px">
+          <img src="/images/1.jpeg" alt="D.Hosea" width="400px" height="500px">
           <section id="profile">
             <h2>Software Engineer</h2>
             <h2>Innovator</h2>
@@ -45,11 +45,6 @@
       <header>
         <nav>
           <ul>
-            <li class="nav-link">projects.</li>
-            <li class="nav-link"> <a className='social' href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-                target="_blank">
-                contact.
-              </a></li>
             <li class="nav-link"><a className="btn-input" href="../public/Resume2020.pdf" target="_blank"
                 download="DHosea's Resume.pdf">
                 resume.
@@ -63,6 +58,10 @@
             <li class="nav-link"><a href="https://codepen.io/hosead6168">
                 codepen.
               </a></li>
+            <li class="nav-link"> <a className='social' href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                target="_blank">
+                contact.
+              </a></li>
           </ul>
         </nav>
       </header>
@@ -74,7 +73,8 @@
             <video loop="true" autoplay="autoplay" muted>
               <source src="/images/CalorieKitchen.mp4" type="video/mp4">
             </video>
-            <p>Calorie Kitchen was built with a Node.js backend and serves ejs templates for client-side views. This
+            <p class="project-info">Calorie Kitchen was built with a Node.js backend and serves ejs templates for
+              client-side views. This
               application uses RESTFUL routing to handle API requests allowing clients to receive details. Solo Project:
               Calorie Kitchen API - JavaScript, CSS, HTML - Created a single page application with client side rending
               with API and AJAX capabilities. The API accessed Spoonacular DB JSON data. A web app for gathering and
@@ -89,13 +89,46 @@
             <video loop="true" autoplay="autoplay" muted>
               <source src="/images/CareerConnect.mp4" type="video/mp4">
             </video>
-            <p>Career Connect serves as a platform for new software developers to identify new technology as well as the
+            <p class="project-info">Career Connect serves as a platform for new software developers to identify new
+              technology as well as the
               latest tech updates. Since networking is essential to any new career this is also a place to network. This
               application was made with JavaScript, MongoDB, Express, oAuth Google, Node.js, and RESTful routing. Users
               have the ability to search through jobs using the GitHub jobs API.
             </p>
             <a href="https://github.com/HoseaCodes/CareerConnect">Github</a>
             <a href="https://careerconnect.herokuapp.com/">Demo</a>
+          </section>
+          <section id="projects">
+            <h3> <a href="https://devcenter-629.herokuapp.com/">Dev Center</a></h3>
+            <video loop="true" autoplay="autoplay" muted>
+              <source src="/images/devcenter.mp4" type="video/mp4">
+            </video>
+            <p class="project-info">
+              DevCenter was created in order to help users have less clutter open on their tabs. This application gives
+              users
+              the ability to authenticate with other applications and then be able to use some base functionality of
+              those sites
+              via a third party API.
+            </p>
+            <a href="https://github.com/HoseaCodes/DevCenter">Github</a>
+            <a href="https://devcenter-629.herokuapp.com/">Demo</a>
+          </section>
+          <section id="projects">
+            <h3> <a href="https://sneaker-api-htx.herokuapp.com/">Sneaker API</a></h3>
+            <video loop="true" autoplay="autoplay" muted>
+              <source src="/images/sneaker-api.mp4" type="video/mp4">
+            </video>
+            <p class="project-info">Sneaker-API was built with a Node.js backend, MongoDB database, and serves JSON data
+              to the client. This application uses RESTFUL routing to handle API requests allowing clients to receive
+              details on individual sneakers. I used EJS to serve a client view to get more information on the requests.
+              I have always had an interest in sneakers. In the process of making projects I wanted to make a sneaker
+              application using a 3rd party API but I discovered there weren't any API's or there weren't any that were
+              accessible at the time. Sneaker API produces JSON data with descriptions, images, prices and release dates
+              of the most popular sneakers. You can make HTTP request to my API to get the JSON data. On the home page
+              you can see some of the sample JSON data if you click the submit button.
+            </p>
+            <a href="https://github.com/HoseaCodes/Sneaker-Api">Github</a>
+            <a href="https://sneaker-api-htx.herokuapp.com/">Demo</a>
           </section>
           <h2 id="projects-header">Currently Working On...</h2>
           <section id="projects">
@@ -113,23 +146,36 @@
             <a href="https://github.com/HoseaCodes/Calorie-Kitchen">Github</a>
             <a href="https://caloriekitchen.herokuapp.com/">Demo</a>
           </section>
-          <h2>My Interest</h2>
-          <section>
-            <i class="fa fa-code" aria-hidden="true"></i>
-            <h3>Progamming</h3>
-            <i class="fa fa-plane" aria-hidden="true"></i>
-            <h3>Travel</h3>
-            <img src="/images/sneaker.png" alt="Sneakers" width="100px" height="100px">
-            <h3>Sneakers</h3>
-            <img src="/images/weights.png" alt="Weights" width="100px" height="100px">
-            <h3>Weights</h3>
-            <img src="/images/ps5.png" alt="Weights" width="100px" height="100px">
-            <h3>Video Games</h3>
-            <img src="/images/movies.png" alt="Weights" width="100px" height="100px">
-            <h3>Watching Movies</h3>
+          <h2 class="sub-title">My Interest</h2>
+          <section id="interest">
+            <div class="interest-item first">
+              <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+              <h3>Progamming</h3>
+            </div>
+            <div class="interest-item second ">
+              <i class="fa fa-plane fa-4x" aria-hidden="true"></i>
+              <h3>Travel</h3>
+            </div>
+            <div class="interest-item third">
+              <img src="/images/sneaker.png" alt="Sneakers" width="100px" height="100px">
+              <h3>Sneakers</h3>
+            </div>
+            <div class="interest-item fourth">
+              <img src="/images/weights.png" alt="Weights" width="100px" height="100px">
+              <h3>Weights</h3>
+            </div>
+            <div class="interest-item fifth">
+              <img src="/images/ps5.png" alt="Weights" width="100px" height="100px">
+              <h3>Video Games</h3>
+            </div>
+            <div class="interest-item sixth">
+              <img src="/images/movies.png" alt="Weights" width="100px" height="100px">
+              <h3>Watching Movies</h3>
+            </div>
           </section>
-          <h2 id="contact">Additional Side Projects</h2>
+          <h2 class="sub-title">Side Projects</h2>
           <h3>Live Views {Check them out}</h3>
+          <h3>w/API's</h3>
           <section class="side-projects">
             <div>
               <h3><a href="https://github.com/HoseaCodes/pokegallery">Pokègallery</a></h3>
@@ -140,16 +186,19 @@
               <iframe src="https://hoseacodes-city-tours.netlify.app/" frameborder="0" width="350px"></iframe>
             </div>
             <div>
-              <h3><a href="https://hoseacodes-reacttodolist.netlify.app/">React Todolist</a></h3>
-              <iframe src="https://hoseacodes-reacttodolist.netlify.app/" frameborder="0" width="350px"></iframe>
-            </div>
-            <div>
               <h3><a href="https://hoseacodes-starwars.netlify.app/">React Starwars</a></h3>
               <iframe src="https://hoseacodes-starwars.netlify.app/" frameborder="0" width="350px"></iframe>
             </div>
+            <div>
+              <h3><a href="https://hoseacodes-react-github.netlify.app/">React Github Display</a></h3>
+              <iframe src="https://hoseacodes-react-github.netlify.app/" frameborder="0" width="350px"></iframe>
+            </div>
+            <div>
+              <h3><a href="https://hoseacodes-reacttodolist.netlify.app/">React Todolist</a></h3>
+              <iframe src="https://hoseacodes-reacttodolist.netlify.app/" frameborder="0" width="350px"></iframe>
+            </div>
           </section>
-          <hr>
-          <h2 id="contact">Get In Touch</h2>
+          <h2 class="sub-title">Get In Touch</h2>
           <div>
             <a className='social' href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"> Email Me
             </a>
