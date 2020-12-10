@@ -11,6 +11,7 @@ flex-direction: row;
 margin: 0;
 }
 #sidebar {
+  max-height: 1000px;
   background-color: rgb(35, 41, 47);
   background-color: whitesmoke;
   background-image: linear-gradient(to right bottom, rgba(119,119,119,0.6), rgba(119,119,119,0.6)), url('https://i.imgur.com/XjlG7bX.jpg');
@@ -24,6 +25,11 @@ margin: 0;
   position: sticky;
   top: 0;
   position: -webkit-sticky;
+}
+#sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #main-content {
   width: 100%;
