@@ -4,10 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var favicon = require('serve-favicon')
+var uuid = require('uuid');
 
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+// const { S3 } = require('aws-sdk');
 
 var app = express();
 
