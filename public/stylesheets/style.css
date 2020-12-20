@@ -140,6 +140,7 @@ height: 100%;
 }
 #social {
   display: flex;
+  justify-content: center;
   font-size: 4rem;
   width: 100%;
 }
