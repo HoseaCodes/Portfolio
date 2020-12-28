@@ -180,7 +180,6 @@ video, #currently-work {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
   width: 100%;
-  text-align: center;
 }
 .side-project-info {
   width: 50%;
