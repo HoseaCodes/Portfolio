@@ -29,9 +29,11 @@ margin: 0;
 #sidebar-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  /* 
   margin: 5px auto;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
 
 }
 #main-content {
