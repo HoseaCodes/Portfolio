@@ -315,7 +315,13 @@ input::placeholder, textarea::placeholder {
   color: #00B7FF;
   font-size: 2.2rem;
 }
-
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) {
+    .side {
+      display: none;
+    } 
+  }
 @media only screen and (max-width: 920px){
   .side {
     display: none;
