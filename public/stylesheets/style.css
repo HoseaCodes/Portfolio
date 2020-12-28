@@ -2,7 +2,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #F6F9FC;
   font-family: 'Courier Prime', monospace;
-  margin: 0;
+  margin: 0 auto;
   max-width: 100%;
 }
 #container {
