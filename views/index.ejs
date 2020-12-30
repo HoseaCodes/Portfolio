@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>
@@ -15,7 +15,7 @@
   <div id="container">
     <div id="sidebar">
       <div id="sidebar-content">
-        <p id="logo">D.Hosea</p>
+        <h1 id="logo">D.Hosea</h1>
         <article id="info-card">
           <img class="original-image" src="https://i.imgur.com/ZopVuTd.jpg" alt="D.Hosea" width="400px" height="500px">
           <section id="profile">
@@ -27,7 +27,7 @@
         </article>
         <footer class="footer-item">
           <section id="social">
-            <a class="icons" href="https://github.com/HoseaCodes">
+            <a class="icons" target="_blank" href="https://github.com/HoseaCodes">
               <i class="fa fa-github" aria-hidden="true"></i>
             </a>
             <a class="icons" href="https://www.linkedin.com/in/dominique-hosea/">
@@ -85,17 +85,17 @@
             <h3> <a class="project-header" href="https://sneaker-api-htx.herokuapp.com/">Sneaker API</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/QhwCEgE.mp4" type="video/mp4">
+              <track label="English" kind="project" srclang="en" default>
             </video>
             <p class="project-info">
               In the process of making projects I wanted to make a sneaker application using a 3rd party API but I
               discovered there weren't any API's or there weren't any that were accessible at that time. This dilemma
               brought Sneaker-API. Sneaker API produces JSON data with descriptions, images, prices, and release dates
-              of
-              the most popular sneakers. You can make HTTP requests to my API to get the JSON data. On the home page,
-              you can see some of the sample JSON data if you click the submit button.
-              Sneaker-API was built with a Node.js backend, MongoDB database, and serves JSON datato the client. This
-              application uses RESTFUL routing to handle API requests allowing clients to receive details on individual
-              sneakers. I used EJS to serve client views to get more information on the requests.
+              of the most popular sneakers. You can make HTTP requests to my API to get the JSON data. On the home page,
+              you can see some of the sample JSON data if you click the submit button. Sneaker-API was built with a
+              Node.js backend, MongoDB database, and serves JSON datato the client. This application uses RESTFUL
+              routing to handle API requests allowing clients to receive details on individual sneakers. I used EJS to
+              serve client views to get more information on the requests.
             </p>
             <a class="project-links" href="https://github.com/HoseaCodes/Sneaker-Api">Github</a>
             <a class="project-links" href="https://sneaker-api-htx.herokuapp.com/">Demo</a>
@@ -104,6 +104,7 @@
             <h3> <a class="project-header" href="https://hoseacodes-sortingstyles.netlify.app/">Sorting Styles</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/DmYfP9T.mp4" type="video/mp4">
+              <track label="English" kind="project" srclang="en" default>
             </video>
             <p class="project-info">
               Algorithms can be one of the most difficult learning challenges as a new Software Engineer. Sort
@@ -120,6 +121,7 @@
             <h3> <a class="project-header" href="https://careerconnect.herokuapp.com/">Career Connect</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/B0drFQI.mp4" type="video/mp4">
+              <track label="English" kind="project" srclang="en" default>
             </video>
             <p class="project-info">
               Career Connect serves as a platform for new software developers to identify new technology as well as the
@@ -134,6 +136,7 @@
             <h3> <a class="project-header" href="https://devcenter-629.herokuapp.com/">Dev Center</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/pWRTkXg.mp4" type="video/mp4">
+              <track label="English" kind="project" srclang="en" default>
             </video>
             <p class="project-info">
               DevCenter was created in order to help users have less clutter open on their tabs. This application gives
@@ -199,7 +202,7 @@
             <h3>Traveling</h3>
           </div>
           <div class="interest-item third">
-            <img src="/images/sneaker.png" alt="Sneakers" width="100px" height="100px">
+            <img src="/images/sneaker.png" alt="SNKR" width="100px" height="100px">
             <h3>Sneakers</h3>
           </div>
           <div class="interest-item fourth">
@@ -207,14 +210,14 @@
             <h3>Fitness</h3>
           </div>
           <div class="interest-item fifth">
-            <img src="/images/ps5.png" alt="Weights" width="100px" height="100px">
+            <img src="/images/ps5.png" alt="PS4" width="100px" height="100px">
             <div id="hover-content">
               PSN: D.Hosea 😎
             </div>
             <h3>Video Games</h3>
           </div>
           <div class="interest-item sixth">
-            <img src="/images/movies.png" alt="Weights" width="100px" height="100px">
+            <img src="/images/movies.png" alt="Movies" width="100px" height="100px">
             <h3>Watching Movies</h3>
           </div>
         </section>
@@ -258,9 +261,12 @@
         <div class='contact-container'>
           <p>Have a question? I am available for hire and open to any ideas of cooperation.</p>
           <form action="https://getform.io/f/7efda21f-ca67-48f6-8a1e-723776d4ae3b" method='POST'>
-            <input class='contact-input' type="text" name="name" placeholder="Name" />
-            <input class='contact-input' type="email" name="email" placeholder="Enter Email" />
-            <textarea class='area' name="message" placeholder='Your Message'></textarea>
+            <label style="visibility: hidden;" for="name">Name</label>
+            <label style="visibility: hidden;" for="email">Email</label>
+            <label style="visibility: hidden;" for="msg">Message</label>
+            <input class='contact-input' type="text" id="name" name="name" placeholder="Name" />
+            <input class='contact-input' type="email" id="email" name="email" placeholder="Enter Email" />
+            <textarea class='area' name="message" id="msg" placeholder='Your Message'></textarea>
             <input class='btn' type="submit" value="Submit" />
           </form>
         </div>
