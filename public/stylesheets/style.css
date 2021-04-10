@@ -71,7 +71,7 @@ nav ul {
   display: flex;
   list-style: none;
   align-items: center;
-  margin-right: 7rem;
+  margin-right: 9rem;
 }
 .icons {
   color: #fff;
@@ -154,7 +154,7 @@ border-radius: 12px;
 #social {
   display: flex;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
   width: 100%;
 }
 #social i {
@@ -164,6 +164,7 @@ border-radius: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
+  margin: 5rem
 }
 .interest-item {
   display: flex;
@@ -194,10 +195,10 @@ video, #currently-work {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
   width: 100%;
+  margin: 1rem 7rem 7rem 7rem;
 }
 .side-project-info {
   width: 50%;
-  margin-top: 1rem;
 }
 .project-info, .project-links {
   overflow: scroll;
@@ -215,6 +216,7 @@ video, #currently-work {
   color: #1A1E23;
   font-size: 2rem;
 }
+
 
 .tags {
   display: flex;
@@ -299,7 +301,9 @@ footer p a {
 
 .sub-title{
   font-size: 3rem;
-  padding-top: 10rem;
+  padding-top: 5rem;
+  margin: 7rem;
+  margin-bottom: 0;
 }
 hr {
   margin-bottom: 4rem;
@@ -345,7 +349,7 @@ input::placeholder, textarea::placeholder {
   height: 8rem;
   margin: 2px;
 }
-.btn, .project-links {
+.project-links {
   background: #eee;
   border-radius: 12px;
   color: #999;
@@ -361,17 +365,30 @@ input::placeholder, textarea::placeholder {
   text-decoration: none;
   margin-top: 20px;
 }
-.btn:hover {
-  border: 2px solid #000;
-  margin-bottom: 10px;
-  padding: 10px 20px;
+.btn {
+  background: #eee;
+  border-radius: 12px;
+  color: #999;
+  line-height: 26px;
+  padding: 1%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
   transition: all 0.5s;
   text-decoration: none;
-  left: 35%;
-  animation: header-btn 10s steps(1) -1s normal;
+  margin-top: 2%;
+  margin: 0 auto;
+  width: 20%;
+  text-align: center;
+}
+.btn:hover {
+  border: 2px solid #000;
+  transition: all 0.5s;
+  text-decoration: none;
   background-color: #043927;
   color: white;
-  font-size: larger;
 }
 .top-btn {
   color: #787878;
