@@ -4,6 +4,7 @@ body {
   font-family: 'Courier Prime', monospace;
   margin: 0 auto;
   max-width: 100%;
+  overflow-x: hidden;
 }
 #container {
 display: flex;
@@ -11,7 +12,7 @@ flex-direction: row;
 margin: 0;
 }
 #sidebar {
-  max-height: 1000px;
+  max-height: 100%;
   background-color: rgb(35, 41, 47);
   background-color: whitesmoke;
   background-image: linear-gradient(to right bottom, rgba(119,119,119,0.6), rgba(119,119,119,0.6)), url('https://i.imgur.com/XjlG7bX.jpg');
@@ -20,7 +21,7 @@ margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
-  width: 40%;
+  width: 50%;
   margin: 0;
   position: sticky;
   top: 0;
@@ -30,8 +31,11 @@ margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 0;
   max-height: 100vh;
+  padding: 10%;
+  padding-top: 0;
+  margin: 0 0 5rem 0;
 }
 #main-content {
   width: 100%;
@@ -47,7 +51,7 @@ nav {
   top: 0;
   right: 0;
   background-color: #F6F9FC;
-  width: 68%;
+  width: 60%;
 }
 .nav-link {
   padding-right: 2rem;
@@ -55,11 +59,12 @@ nav {
 }
 .nav-link a {
   text-decoration: none;
-  color: #000;
+  color: #787878;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 #logo {
-  font-size: 5rem;
+  font-size: 4rem;
   list-style: none;
   text-align: center;
   margin: 0;
@@ -71,7 +76,8 @@ nav ul {
   display: flex;
   list-style: none;
   align-items: center;
-  margin-right: 9rem;
+  margin-right: 3rem;
+  
 }
 .icons {
   color: #fff;
@@ -100,18 +106,23 @@ a {
 
 #info-card, .projects {
   margin: 5rem auto;
-  width: 60%;
-  padding: 15px;
+  width: 90%;
+  padding: 5px;
   background-color: white;
+}
+#info-card {
+  padding: 0;
 }
 .intro-info {
   width: 71%;
-  margin: 9rem;
+  margin: 0 auto;
+  margin-top: 4rem;
   line-height: 1.5;
   background: white;
   font-size: 1.2rem;
   padding: 5%;
   border-radius: 12px;
+  color: #787878;
 }
 .projects {
   width: 80%;
@@ -136,8 +147,9 @@ a {
 }
 #profile {
   display: block;
-  margin-left: 3rem;
+  margin-left: 2rem;
   line-height: 1rem;
+  color: #787878;
 }
 .projects {
 height: 100%;
@@ -145,16 +157,17 @@ border-radius: 12px;
 }
 .project-header {
   text-align: center;
+  color: #787878;
 }
 #projects-header {
   margin: 5rem 8rem;
   font-size: 5rem;
-
+  color: #787878;
 }
 #social {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   width: 100%;
 }
 #social i {
@@ -173,10 +186,10 @@ border-radius: 12px;
   align-items: center;
 }
 .first, .second, .third {
-  border-bottom: 10px solid #000;
+  border-bottom: 10px solid #787878;
 }
 .first, .second, .fourth, .fifth {
-  border-right: 10px solid #000;
+  border-right: 10px solid #787878;
 }
 #hover-content {
   display:none;
@@ -192,24 +205,25 @@ video, #currently-work {
 }
 .side-projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 80px;
   width: 100%;
   margin: 1rem 7rem 7rem 7rem;
 }
-.side-project-info {
-  width: 50%;
+
+.side {
+  color: #787878;
 }
 .project-info, .project-links {
   overflow: scroll;
   font-size: 1.3rem;
   font-family: 'PT Sans', sans-serif; 
   line-height: 1.5;
-
+  color: #787878;
 }
 .project-header, .side-project-header {
   text-decoration: none;
-  color: #1A1E23;
+  color: #787878;
   font-size: 2rem;
 }
 .intro {
@@ -285,6 +299,7 @@ video, #currently-work {
 footer p {
   color: #fff;
   opacity: 0.5;
+  text-align: center;
 }
 footer p a {
   color: #fff;
@@ -304,6 +319,9 @@ footer p a {
   padding-top: 5rem;
   margin: 7rem;
   margin-bottom: 0;
+  color: #787878;
+  margin-top: 1rem;
+
 }
 hr {
   margin-bottom: 4rem;
@@ -312,6 +330,7 @@ hr {
   font-size: 1.5rem;
   width: 50%;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .social {
   color: #fff;
@@ -457,7 +476,7 @@ input::placeholder, textarea::placeholder {
     }
     #interest {
       margin-top: 20%;
-
+      color: #787878;
     }
     hr {
       display: none;
