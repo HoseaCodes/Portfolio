@@ -83,7 +83,7 @@
         </nav>
       </header>
       <main>
-        <p>Hi there! I’m Dominique. I’m a passionate introvert who loves building things with code. My first experience
+        <!-- <p>Hi there! I’m Dominique. I’m a passionate introvert who loves building things with code. My first experience
           with programming was when I was 19, but it didn’t last long: I was a big fan of animated-games and shows.
           Being a fan of challenges I took a Java and C++ course as my electives in college. It was incredibly
           challenging, we coded on pen and paper first and when we finally used a computer we opened notepad to build
@@ -96,37 +96,51 @@
           skills and learning Javascript (cough React cough), Python, and Java. I recently graduated from General
           Assembly’s intensive Software Engineering Bootcamp program. I’m seeking a full-time role where I can help a
           company achieve its goals and I can continue to grow.
-        </p>
+        </p> -->
         <h2 id="projects-header">Featured Projects</h2>
         <article class="project-group">
-          <section id="projects">
-            <h3> <a class="project-header" href="https://sneaker-api-htx.herokuapp.com/">Sneaker API</a></h3>
-            <video loop="true" autoplay="autoplay" muted>
-              <source src="https://i.imgur.com/QhwCEgE.mp4" type="video/mp4">
-              <track label="English" kind="project" srclang="en" default>
-            </video>
-            <ul>
-              Tech:
-              <li>JavaScript</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-              <li>Public API</li>
-              <li>JSON</li>
+          <section class="projects">
+            <h3 class="project-header">
+              <a class="project-header" href="https://sneaker-api-htx.herokuapp.com/">Sneaker API</a>
+            </h3>
+            <div>
+              <button class="top-btn" id="project1-overview">Overview</button>
+              <button class="top-btn" id="project1-browse">Browse Files</button>
+            </div>
+            <div style="border: 1px solid rgb(82, 80, 80); border-radius: 12px;">
+              <video id="project1-video" loop="true" autoplay="autoplay" muted>
+                <source src="https://i.imgur.com/QhwCEgE.mp4" type="video/mp4">
+                <track label="English" kind="project" srclang="en" default>
+              </video>
+              <iframe id="project1-iframe" class="iframe"
+                src="https://runkit.com/e/oembed-iframe?target=%2Fusers%2Fhoseacodes%2Frepositories%2Fsneaker-api.server.js%2Fdefault&referrer="
+                style="border: 0; width: 100%; height: 60vh;" allowfullscreen scrolling="yes"></iframe>
+            </div>
+            <ul class="tags">
+              <li class="tag">JavaScript</li>
+              <li class="tag">Node.js</li>
+              <li class="tag">MongoDB</li>
+              <li class="tag">Public API</li>
+              <li class="tag">JSON</li>
             </ul>
-            <p class="project-info">
-              In the process of making projects I wanted to make a sneaker application using a 3rd party API but I
-              discovered there weren't any API's or there weren't any that were accessible at that time. This dilemma
-              brought Sneaker-API. Sneaker API produces JSON data with descriptions, images, prices, and release dates
-              of the most popular sneakers. You can make HTTP requests to my API to get the JSON data. On the home page,
-              you can see some of the sample JSON data if you click the submit button. Sneaker-API was built with a
-              Node.js backend, MongoDB database, and serves JSON datato the client. This application uses RESTFUL
-              routing to handle API requests allowing clients to receive details on individual sneakers. I used EJS to
-              serve client views to get more information on the requests.
-            </p>
-            <a class="project-links" href="https://github.com/HoseaCodes/Sneaker-Api">Github</a>
-            <a class="project-links" href="https://sneaker-api-htx.herokuapp.com/">Demo</a>
+            <div style="padding: 2%">
+
+              <p class="project-info">
+                In the process of making projects I wanted to make a sneaker application using a 3rd party API but I
+                discovered there weren't any API's or there weren't any that were accessible at that time. This dilemma
+                brought Sneaker-API. Sneaker API produces JSON data with descriptions, images, prices, and release dates
+                of the most popular sneakers. You can make HTTP requests to my API to get the JSON data. On the home
+                page,
+                you can see some of the sample JSON data if you click the submit button. Sneaker-API was built with a
+                Node.js backend, MongoDB database, and serves JSON datato the client. This application uses RESTFUL
+                routing to handle API requests allowing clients to receive details on individual sneakers. I used EJS to
+                serve client views to get more information on the requests.
+              </p>
+              <a class="project-links" href="https://github.com/HoseaCodes/Sneaker-Api">Github</a>
+              <a class="project-links" href="https://sneaker-api-htx.herokuapp.com/">Demo</a>
+            </div>
           </section>
-          <!-- <section id="projects">
+          <!-- <section class="projects">
             <h3> <a class="project-header" href="https://hoseacodes-sortingstyles.netlify.app/">Sorting Styles</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/DmYfP9T.mp4" type="video/mp4">
@@ -143,7 +157,7 @@
             <a class="project-links" href="https://github.com/HoseaCodes/Sorting-Style">Github</a>
             <a class="project-links" href="https://hoseacodes-sortingstyles.netlify.app/">Demo</a>
           </section> -->
-          <section id="projects">
+          <section class="projects">
             <h3> <a class="project-header" href="https://careerconnect.herokuapp.com/">Career Connect</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/B0drFQI.mp4" type="video/mp4">
@@ -166,7 +180,7 @@
             <a class="project-links" href="https://github.com/HoseaCodes/CareerConnect">Github</a>
             <a class="project-links" href="https://careerconnect.herokuapp.com/">Demo</a>
           </section>
-          <section id="projects">
+          <section class="projects">
             <h3> <a class="project-header" href="https://devcenter-629.herokuapp.com/">Dev Center</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/pWRTkXg.mp4" type="video/mp4">
@@ -190,7 +204,7 @@
           </section>
           <!-- <h3 id="projects-header">Click here for more</h3> -->
 
-          <!-- <section id="projects">
+          <!-- <section class="projects">
             <h3> <a class="project-header" href="https://caloriekitchen.herokuapp.com/">Calorie-Kitchen</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/fVzb6sP.mp4" type="video/mp4">
@@ -206,7 +220,7 @@
             <a class="project-links" href="https://github.com/HoseaCodes/Calorie-Kitchen">Github</a>
             <a class="project-links" href="https://caloriekitchen.herokuapp.com/">Demo</a>
           </section>
-          <section id="projects">
+          <section class="projects">
             <h3> <a class="project-header" href="">Pure CSS</a></h3>
             <video loop="true" autoplay="autoplay" muted>
               <source src="https://i.imgur.com/lVi4QBi.mp4" type="video/mp4">
@@ -221,7 +235,7 @@
         </article>
 
         <h2 id="projects-header">Currently Working On...</h2>
-        <section id="projects">
+        <section class="projects">
           <h3> <a class="project-header" href="http://www.mergeimmersive.com/">Merge-Immersive</a></h3>
           <img id="currently-work" src="https://i.imgur.com/bRK2U7B.png" alt="MergeImmersive">
           <ul>
@@ -240,7 +254,7 @@
           <a class="project-links" href="http://www.mergeimmersive.com/">Demo</a>
         </section>
         <h2 id="projects-header"> Freelance Clients</h2>
-        <section id="projects">
+        <section class="projects">
           <h3> <a class="project-header" href="http://www.social-ring.com/">Social-Ring</a></h3>
           <img id="currently-work" src="https://i.imgur.com/IVOM9GW.png" alt="Social-Ring">
           <ul>
@@ -337,7 +351,8 @@
       </main>
     </div>
   </div>
-
+  <script src="/javascripts/index.js"></script>
+  <script src="https://embed.runkit.com"></script>
   <script src="https://use.fontawesome.com/5e16fb3200.js"></script>
 </body>
 
