@@ -1,28 +1,27 @@
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 00px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 00px;
 }
 
 .gallery-item {
-    width: 250px;
-    height: 300px;
-    /* border: 1px solid silver; */
-    margin: 12px;
-    overflow: hidden;
-    border-radius: 10px;
+  width: 250px;
+  height: 300px;
+  /* border: 1px solid silver; */
+  margin: 12px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .gallery-item img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .gallery-item:hover img {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }

@@ -1,30 +1,30 @@
 #details-footer .text-small {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 #details-footer a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 #details-footer a:hover,
 #details-footer a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #details-footer .form-control {
-    /* background: #212529; */
-    background: whitesmoke;
-    border-color: #545454;
+  /* background: #212529; */
+  background: whitesmoke;
+  border-color: #545454;
 }
 
 #details-footer .form-control:focus {
-    /* background: #212529; */
-    background: whitesmoke;
+  /* background: #212529; */
+  background: whitesmoke;
 }
 
 #details-footer {
-    /* background: #212529; */
-    background: whitesmoke;
+  /* background: #212529; */
+  background: whitesmoke;
 }
