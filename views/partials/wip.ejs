@@ -1,0 +1,34 @@
+<h2 id="projects-header">Currently Working On...</h2>
+<% for (let i=0; i < wip.length; i++) { %>
+    <% if (wip[i].show==true) { %>
+        <section class="projects">
+            <h3 class="project-header">
+                <a class="project-header" href="<%=wip[i].demoLink%>">
+                    <%=wip[i].projectName%>
+                </a>
+            </h3>
+            <div>
+                <button class="top-btn" id="project1-overview">Overview</button>
+                <button class="top-btn" id="project1-browse">Browse Files</button>
+            </div>
+            <div style="border: 1px solid rgb(82, 80, 80); border-radius: 12px;">
+                <img id="currently-work" src="<%=wip[i].videoLink%>" alt="<%=wip[i].projectName%>">
+            </div>
+            <ul class="tags">
+                <% for (let j=0; j < wip[i].tags.length; j++) { %>
+                    <li class="tag">
+                        <%=wip[i].tags[j]%>
+                    </li>
+                    <% } %>
+            </ul>
+            <div style="padding: 2%">
+                <p class="project-info">
+                    <%=wip[i].description%>
+                </p>
+                <a class="project-links" href="<%=wip[i].githubLink%>">Github</a>
+                <a class="project-links" href="<%=wip[i].demoLink%>">Demo</a>
+            </div>
+        </section>
+    <% } %>
+
+<% } %>

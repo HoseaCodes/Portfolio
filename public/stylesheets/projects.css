@@ -1,0 +1,115 @@
+#projects-header {
+    margin: 5rem 8rem;
+    font-size: 5rem;
+    color: #787878;
+}
+
+.project-header {
+    text-decoration: none;
+    color: #787878;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.project-header:hover {
+    transition: all 0.5s;
+    text-decoration: none;
+    animation: header-btn 10s steps(1) -1s normal;
+    background-color: transparent;
+    color: #043927;
+    font-size: 2.2rem;
+}
+
+.projects {
+    margin: 5rem auto;
+    width: 80%;
+    padding: 5px;
+    background-color: white;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.project-info {
+    overflow: scroll;
+    font-size: 1.3rem;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.5;
+    color: #787878;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.tag {
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.tag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #eee;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tag:hover {
+    background: #043927;
+    color: white;
+}
+
+.tag:hover::after {
+    border-left-color: #043927;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    #projects-header {
+        margin: 0% auto;
+        margin-top: 10%;
+        width: 95%;
+        font-size: 4rem;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 920px) {
+  
+}
+
+@media only screen and (max-width: 1180px) {
+
+}
