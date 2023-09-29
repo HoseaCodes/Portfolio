@@ -27,7 +27,7 @@ app.use(favicon(path.join(__dirname, "public", "favicon.ico")));
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-app.use("/details", detailRouter);
+app.use("/details/:id", detailRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
