@@ -32,3 +32,10 @@
     <% } %>
 
 <% } %>
+<% if (wip.length === 1 && wip[0].show==false) { %>
+    <section class="projects">
+        <h3 class="project-header">
+            No projects at the moment.
+        </h3>
+    </section>
+<% } %>
