@@ -1,0 +1,43 @@
+<h2 id="projects-header">Featured Projects</h2>
+<article class="project-group">
+    <% for (let i=0; i < featured.length; i++) { %>
+        <% if (featured[i].show==true) { %>
+            <section class="projects">
+                <h3 class="project-header">
+                    <a class="project-header" href="/details/<%=featured[i]._id%>">
+                        <%=featured[i].projectName%>
+                    </a>
+                </h3>
+                <div>
+                    <button class="top-btn" id="project1-overview">Overview</button>
+                    <button class="top-btn" id="project1-browse">Browse Files</button>
+                </div>
+                <div style="border: 1px solid rgb(82, 80, 80); border-radius: 12px;">
+                    <video id="project1-video" loop="true" autoplay="autoplay" muted>
+                        <source src="<%=featured[i].videoLink%>" type="video/mp4">
+                        <track label="English" kind="project" srclang="en" default>
+                    </video>
+                    <iframe id="project1-iframe" class="iframe" src="<%=featured[i].iframe%>"
+                        style="border: 0; width: 100%; height: 60vh;" allowfullscreen scrolling="yes">
+                    </iframe>
+                </div>
+                <ul class="tags">
+                    <% for (let j=0; j < featured[i].tags.length; j++) { %>
+                        <li class="tag">
+                            <%=featured[i].tags[j]%>
+                        </li>
+                        <% } %>
+                </ul>
+                <div style="padding: 2%">
+                    <p class="project-info">
+                        <%=featured[i].description%>
+                    </p>
+                    <a class="project-links" href="<%=featured[i].githubLink%>">Github</a>
+                    <a class="project-links" href=" <%=featured[i].demoLink%>">Demo</a>
+                </div>
+            </section>
+        <% } %>
+        
+    <% } %>
+
+</article>
