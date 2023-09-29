@@ -9,17 +9,51 @@
         <%-include("./partials/wip.ejs")%>
         <%-include("./partials/clients.ejs")%>
         <%-include("./partials/interest.ejs")%>
-        <!-- <%-include("./partials/slider.ejs")%> -->
         <%-include("./partials/sideProjects.ejs")%>
-        <!-- <%-include("./partials/showCase.ejs")%> -->
+        <%-include("./partials/slider.ejs")%>
         <%-include("./partials/contact.ejs")%>
       </main>
     </div>
   </div>
+  <script>
+
+    const elDivs = document.querySelectorAll(".slider");
+
+    const toggleClassDivs = (evt) => {
+      const isEnter = evt.type === "mouseenter";
+      console.log({evt})
+      elDivs.forEach(el => { 
+        console.log({el})
+        el.children[0].classList[isEnter ? "add" : "remove"]("active")
+        el.children[1].classList[isEnter ? "add" : "remove"]("active")
+        // el.classList[isEnter ? "add" : "remove"]("active")
+      });
+      // evt.currentTarget.classList.remove("active");
+    };
+
+    elDivs.forEach(el => {
+      console.log({el})
+      el.addEventListener("mouseenter", toggleClassDivs);
+      el.addEventListener("mouseleave", toggleClassDivs);
+    });
+  </script>
   <script src="/javascripts/index.js"></script>
   <script src="https://embed.runkit.com"></script>
   <script src="https://use.fontawesome.com/5e16fb3200.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
