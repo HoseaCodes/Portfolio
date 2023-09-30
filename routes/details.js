@@ -2,6 +2,7 @@ const express = require("express");
 
 const detailRouter = express.Router();
 const {
+  engineer,
   featured,
   images,
   property,
@@ -13,6 +14,7 @@ const {
 detailRouter.get("/", async (req, res) => {
   async function main() {
     res.render("details", {
+      engineer,
       featured,
       images,
       property: property,
