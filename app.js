@@ -9,6 +9,7 @@ var uuid = require("uuid");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const detailRouter = require("./routes/details");
+const exampleRouter = require("./routes/example");
 
 // const { S3 } = require('aws-sdk');
 
@@ -28,6 +29,7 @@ app.use(favicon(path.join(__dirname, "public", "favicon.ico")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/details/:id", detailRouter);
+app.use("/example", exampleRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
