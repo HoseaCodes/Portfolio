@@ -9,7 +9,9 @@
             </h3>
             <div>
                 <button class="top-btn" id="project1-overview">Overview</button>
+                <% if (wip[i].iframe) { %>
                 <button class="top-btn" id="project1-browse">Browse Files</button>
+                <% } %>
             </div>
             <div style="border: 1px solid rgb(82, 80, 80); border-radius: 12px;">
                 <img id="currently-work" src="<%=wip[i].videoLink%>" alt="<%=wip[i].projectName%>">
@@ -26,7 +28,9 @@
                     <%=wip[i].description%>
                 </p>
                 <a class="project-links" href="<%=wip[i].githubLink%>">Github</a>
+                <% if (wip[i].demoLink) { %>
                 <a class="project-links" href="<%=wip[i].demoLink%>">Demo</a>
+                <% } %>
             </div>
         </section>
     <% } %>

@@ -9,7 +9,9 @@
             </h3>
             <div>
                 <button class="top-btn" id="project1-overview">Overview</button>
+                <% if (wip[i].iframe) { %>
                 <button class="top-btn" id="project1-browse">Browse Files</button>
+                <% } %>
             </div>
             <div style="border: 1px solid rgb(82, 80, 80); border-radius: 12px;">
                 <video id="project1-video" loop="true" autoplay="autoplay" muted>
