@@ -1,0 +1,34 @@
+<div id="slider" style="display: none;">
+    <div class="slides">
+        <% for (let i=0; i < sideProjects.length; i++) { %>
+            <div class="slider">
+                <!-- <div class="legend <%= sideProjects[i] && 'active' %>"></div>
+                <div class="content <%= sideProjects[i] && 'active' %>"> -->
+                <div class="legend"></div>
+                <div class="content">
+                    <div class="content-txt">
+                        <h1><%=sideProjects[i].name%></h1>
+                        <h2>View live link <a href="<%=sideProjects[i].link%>" target="_blank" rel="noopener noreferrer">here</a>. 
+                            <!-- Nam ultrices pellentesque facilisis. In semper tellus mollis nisl pulvinar vitae vulputate lorem
+                            consequat. Fusce odio tortor, pretium sit amet auctor ut, ultrices vel nibh. -->
+                        </h2>
+                    </div>
+                </div>
+                <div class="image">
+                    <iframe src="<%=sideProjects[i].iframe%>" frameborder="0" width="70%" height="300px"></iframe>
+                    <!-- <img src="https://cdn.stocksnap.io/img-thumbs/960w/VVHE6VHMAW.jpg"> -->
+                </div>
+            </div>
+        <% } %>
+    </div>
+    <div class="switch">
+        <ul>
+            <li>
+                <div class="on"></div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
